@@ -4,7 +4,7 @@
 
 # Week 1 Road Map
 
-1. Variable  & Constant
+1. Variable  & Constants
 2. Operators
 3. Conditional Statment 
 4. Branching Statment / looping 
