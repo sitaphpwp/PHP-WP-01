@@ -1,4 +1,3 @@
 # PHP-WP-01
- PHP &amp; WordPress Plugin Development 
 
-Test
+PHP &amp; WordPress Plugin Development
