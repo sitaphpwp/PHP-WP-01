@@ -1,0 +1,11 @@
+/**
+
+1. variable 
+2. operator 
+3. datatype 
+4. conditional 
+5. branching 
+6. array 
+7. strings
+8. functions 
+
