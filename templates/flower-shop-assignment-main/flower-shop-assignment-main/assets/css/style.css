@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* reusable components styles */
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #E55473;
+    border: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+    color: #272727;
+    ;
+}
+
+p {
+    color: rgba(39, 39, 39, 0.60);
+}
+
+.link {
+    color: #272727;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section,footer {
+    padding: 40px 40px;
+}
+
+.section-title {
+    max-width: 594px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 30px;
+}
+
+.section-title p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.items-start{
+    align-items: start;
+}
+.items-end{
+    align-items: end;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-start{
+    justify-content: start;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* add header section style */
+.header {
+    background: rgba(229, 84, 115, 0.10);
+    margin-bottom: 40px;
+    padding: 0px 40px 0px;
+}
+
+.header nav{
+    padding: 10px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e5547371;
+}
+.header nav .logo a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #272727;
+    font-weight:500;
+}
+.header nav .logo span{
+    color: #E55473;
+}
+.header nav .nav-ul ul{
+    list-style-type: none;
+    gap: 10px;
+}
+
+.header nav .nav-ul ul li a{
+    color: #272727;
+    text-decoration: none;
+}
+.header nav .nav-ul ul li a:hover{
+    color: #E55473;
+}
+
+.header .main {
+    column-gap: 40px;
+}
+
+.header .container .text {
+    flex-basis: 50%;
+}
+
+.header .container .text h1 {
+    font-size: 60px;
+}
+
+.header .container .text p {
+    font-size: 18px;
+    margin: 15px 0 20px;
+}
+
+
+.header .container .img {
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.header .container .img img {
+    width: auto;
+    max-height: 650px;
+}
+
+/* feature section style start */
+
+.feature .main {
+    gap: 30px;
+}
+
+/* .feature .main article {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+} */
+
+
+.feature .main article .img {
+    width: 395px;
+    height: 420px;
+    border-radius: 300px 300px 0px 0px;
+}
+.feature .main article .img-1 {
+    background: rgba(167, 33, 98, 0.15);
+}
+.feature .main article .img-2 {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.feature .main article .img-3 {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.feature .main article img {
+    width: 80%;
+    height: 80%;
+}
+
+.feature .main article .title {
+    margin-top: 20px;
+}
+
+
+/* services section style start */
+
+.services .container {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+}
+
+.services .main article{
+    padding: 40px 0;
+}
+
+/* Hot section styles start */
+.hot{
+    background: rgba(229, 84, 115, 0.10);
+}
+.hot .text{
+    flex-basis: 50%;
+    text-align: center;
+}
+.hot .text h3{
+    font-size: 30px;
+}
+.hot .text h3 span{
+    color: #E55473;
+}
+.hot .text p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.hot .img{
+    flex-basis: 50%;
+}
+
+/* social section style start */
+.social .main{
+    gap: 2%;
+    flex-wrap: wrap;
+}
+.social .main .img{
+    width: 100%;
+    flex-basis: 23%;
+}
+.social .main .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* subscribe section style start */
+
+.subscribe .container{
+    background-image: url('../images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 80px 0;
+}
+.subscribe .main form{
+    max-width: 50%;
+    margin: 0 auto;
+    gap: 5px;
+}
+.subscribe .main input{
+    padding: 15px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #FFF;
+    width: 100%;
+}   
+.subscribe .main input:focus{
+    outline: 0;
+    border: 0;
+}   
+
+/* footer section style start */
+
+footer{
+    background: rgba(39, 39, 39, 0.05);
+}
+footer span{
+    color: #E55473;
+}
+footer > p{
+    text-align: center;
+    color: rgba(39, 39, 39, 0.80);;
+}
