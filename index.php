@@ -10,7 +10,6 @@
 <body>
 
     <!-- rgistration form -->
-
     <form action="process.php" method="POST">
         <label for="">Username</label>
         <input type="text" name="username" id="">
@@ -20,8 +19,6 @@
         <br>
         <input type="submit" name="submit" value="Login">
     </form>
-
-
 </body>
 
 </html>
