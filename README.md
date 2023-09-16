@@ -4,9 +4,9 @@ PHP & WordPress Plugin Development
 
 # Week 1 Road Map
 
-1.  Variable & Constants
-2.  Operators
-3.  Conditional Statment
+1.  Variable & Constants ==> done
+2.  Operators ==> done
+3.  Conditional Statment => Done
 4.  Branching Statment / looping
 5.  Array
 6.  Functions
@@ -52,6 +52,7 @@ Attendance percentage
 ```{=html}
 <!--  lets build your own logic  -->
 ```
+
 if ($attendance >= 90) {  if ($score \>= 90) { echo "Excellent! You've
 earned an A."; } elseif (\$score \>= 80) { echo "Great job! You've
 earned a B."; } else { echo "Good job! You've earned a C."; } }
