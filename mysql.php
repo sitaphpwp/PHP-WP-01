@@ -166,3 +166,220 @@ UPDATE `inventory` SET name = 'Lenovo' WHERE id = 1;
 DELETE FROM `inventory` WHERE id = 1
 
 DELETE FROM `inventory` WHERE id = 1;
+
+
+<!--  Join Query  -->
+
+
+inventory : database
+
+products table
+categorys table
+brands table
+users table
+roles table
+
+primary key
+foreign key
+
+
+products entitys :
+=================
+id => int primary key Not Null autoincrement
+name => varchar(255)
+category_id=> (int) foreign key
+brand_id=>(int)
+quantity => int
+price => decimal
+description => text
+image => varchar(255)
+
+
+
+categorys table
+================
+id => int primary key
+category_name => varchar
+image=> varchar
+
+
+
+brands table:
+=============
+id=> int primary key
+name=> varchar
+image=>varchar
+
+
+users table
+===========
+id=> int primary
+role_id=> int foreign key
+firstname=> varchar
+lastname=> varchar
+username=> varchar
+password=>varchar
+email=> varchar
+
+roles table
+===========
+id=> int primary key
+role_name=> varchar
+
+
+profile :
+
+users has one profile
+profile belongs users
+
+one to one relationship:
+
+
+users:
+id => (PK)
+p_id(fk)
+name =>
+username=>
+email=>
+
+
+profile
+===========
+id (pk)
+user_id(fk)
+
+
+relation:
+
+one to one =>
+one to many =>
+
+post table has many comments
+
+
+
+many to many :
+
+
+
+
+many to one =>
+many to many =>
+
+
+
+CREATE TABLE products (
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+cat_id int,
+brand_id int,
+quantity int,
+price decimal(10,3),
+description text,
+image varchar(255),
+PRIMARY KEY (id),
+FOREIGN KEY(cat_id) REFERENCES categories(id),
+FOREIGN KEY(brand_id) REFERENCES brands(id),
+);
+
+
+CREATE TABLE categories (
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+PRIMARY KEY (id)
+);
+
+
+
+
+CREATE TABLE products (
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+cat_id int,
+brand_id int,
+quantity int, price decimal(10,3), description text, image varchar(255), PRIMARY KEY (id), FOREIGN KEY(cat_id) REFERENCES categories(id), FOREIGN KEY(brand_id) REFERENCES brands(id)
+);
+
+
+
+insert :
+INSERT INTO `categories` (`id`, `name`) VALUES (NULL, 'Laptop'), (NULL, 'Mobile');
+
+
+products insert :
+
+INSERT INTO `products`
+(`id`, `name`, `cat_id`, `brand_id`, `quantity`, `price`, `description`, `image`)
+VALUES (NULL, 'Hp G3 Laptop', '1', '1', '100', '25000.25', 'Hp laptop', 'HP laptop image'), (NULL, 'Nokia c3', '2', '2', '20', '25000.10', 'Nokia Mobile', 'Mobile image');
+
+
+
+
+
+INSERT INTO `products`
+(
+`name`,
+`cat_id`,
+`brand_id`,
+`quantity`,
+`price`,
+`description`,
+`image`
+)
+
+VALUES(
+'Lenova Laptop',
+1,
+1,
+100,
+25000.10,
+'lenova prodcuts',
+'lenova image'
+
+)
+
+
+
+Select
+=========
+SELECT * FROM `categories`;
+
+SELECT name FROM `categories`;
+
+
+JOIN
+========
+two or more tables
+
+
+Supported Types of Joins in MySQL
+================================
+
+INNER JOIN: Returns records that have matching values in both tables
+LEFT JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
+CROSS JOIN: Returns all records from both tables
+
+
+
+
+inner join
+==========
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+
+SELECT * FROM products as p
+INNER JOIN categories as ca
+ON p.id = ca.id;
+
+
+SELECT * FROM products AS p INNER JOIN categories AS ca ON p.id = ca.id;
+
+
+
+SELECT p.name, p.quantity,p.price,ca.name FROM products AS p INNER JOIN categories AS ca ON p.id = ca.id;
+
+SELECT p.name, p.quantity,p.price,ca.name FROM products AS p INNER JOIN categories AS ca ON p.id = ca.id WHERE p.id = 1
