@@ -100,3 +100,17 @@ The application should be hosted on a secure web server.
 9.1 Updates and Maintenance
 Ongoing maintenance and support should be provided to address issues and update the application as needed.
 This SRS provides a comprehensive outline of the "Todo" application's features, database structure, and requirements. It serves as a guide for developing the application and ensuring that it meets the specified criteria.
+
+
+# Relationships
+
+Users Table and User Profiles Table:
+
+There is a one-to-one relationship between the Users table and the User Profiles table.
+This means that each user (record in the Users table) corresponds to one user profile (record in the User Profiles table), and vice versa.
+The user_id in the User Profiles table serves as a foreign key that references the user_id in the Users table. This establishes the relationship between a user and their profile.
+Users Table and Todo Items Table:
+
+There is a one-to-many relationship between the Users table and the Todo Items table.
+This means that one user (record in the Users table) can have multiple todo items (records in the Todo Items table).
+The user_id in the Todo Items table serves as a foreign key that references the user_id in the Users table. This establishes the relationship between a user and their todo items.
