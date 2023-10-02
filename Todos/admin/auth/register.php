@@ -64,8 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 ?>
 
 
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-3"></div>
