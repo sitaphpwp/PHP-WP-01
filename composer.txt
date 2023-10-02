@@ -1,0 +1,41 @@
+Composer 
+=========
+composer is PHP dependency manager (PHP) 
+
+NPM: node package manager (JS)
+
+
+
+OOP 
+=====
+Objetc Oriented Programming:
+
+Core Concepts : 
+
+1. Classes and Objects 
+2. Abstraction:
+3. Encapsulation
+4. Inheritance:
+5. Polymorphism
+
+require 'mailer.php';
+class Test 
+{
+  public function Mail(){
+    mail(para1,param1);
+    wp_mail();
+  }
+ 
+}
+
+
+Project Name : EPM_Profile;
+
+https://www.php-fig.org/psr/psr-4/
+
+make a project using composer :
+composer init
+
+
+https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
+https://www.php-fig.org/psr/psr-2/
